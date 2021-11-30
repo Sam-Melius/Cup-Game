@@ -28,7 +28,9 @@ body {
     --footer-height: 25px;
     
     font-family: 'Titillium Web', sans-serif;
-    background-color: var(--color2);
+    background-color: purple;
+    font-size: larger;
+    
 }
 
 main {
@@ -40,7 +42,7 @@ main {
 }
 
 section {
-    background-color: var(--color5);
+    background-color: purple;
     max-width: 80%;
     display: flex;
     flex-direction: column;
@@ -50,17 +52,18 @@ section {
     padding-bottom: var(--gutter);
     margin-top: var(--gutter);
     margin-bottom: var(--gutter);
-    border: solid 2px var(--color1);
-}
-
+    ;
+ }
+ 
 header {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     background-color: var(--color3);
     height: var(--header-height);
     box-shadow: var(--shadow);
-}
-
+    font-size: 2em;
+    font-weight: bolder;
+} 
 
 h2 {
     font-size: 1.8rem;
@@ -88,4 +91,30 @@ footer {
     justify-content: flex-end;
     background-color: var(--color3);
     box-shadow: var(--shadow);
+}
+
+.cup {
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+.cups {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    height: 300px;
+    color: white;
+   
+    
+}
+.cup button {
+    background-color: gray;
+    margin: 10px;
+    color: maroon;
+    cursor: pointer;
+}
+.cup img {
+    width: 150px;
 }
