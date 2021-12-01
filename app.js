@@ -10,6 +10,8 @@ const winsEL = document.getElementById ('wins');
 const lossesEL = document.getElementById ('losses');
 const totalEL = document.getElementById ('total');
 
+const resetButton = document.getElementById ('reset-button');
+
 // let state
 let total = 0;
 let wins = 0;
@@ -64,6 +66,11 @@ button3.addEventListener ('click', () => {
     }
     displayWinLossTotal();
 });
+
+resetButton.addEventListener ('click', () => {
+    resetStats();
+});
+
   // get user input
   // use user input to update state 
   // update DOM to reflect the new state
@@ -79,3 +86,10 @@ function displayWinLossTotal() {
     lossesEL.textContent = total - wins;
     totalEL.textContent = total;
 }
+
+function resetStats() {
+    wins = 0;
+    total = 0;
+    updateWinLossTotal();
+}
+
