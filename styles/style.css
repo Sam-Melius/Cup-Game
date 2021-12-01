@@ -28,7 +28,7 @@ body {
     --footer-height: 25px;
     
     font-family: 'Titillium Web', sans-serif;
-    background-color: purple;
+    background-color: black;
     font-size: larger;
     
 }
@@ -42,7 +42,7 @@ main {
 }
 
 section {
-    background-color: purple;
+    background-color: black;
     max-width: 80%;
     display: flex;
     flex-direction: column;
@@ -58,11 +58,13 @@ section {
 header {
     display: flex;
     justify-content: center;
-    background-color: var(--color3);
+    background-color: beige;
     height: var(--header-height);
     box-shadow: var(--shadow);
-    font-size: 2em;
+    font-size: 3em;
     font-weight: bolder;
+    font-family: cursive;
+    color: maroon;
 } 
 
 h2 {
@@ -117,4 +119,11 @@ footer {
 }
 .cup img {
     width: 150px;
+}
+
+.results button {
+    background-color: gray;
+    margin: 10px;
+    color: red;
+    cursor: pointer;
 }
